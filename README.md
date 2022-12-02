@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+![Christmas banner](https://blogs.sap.com/wp-content/uploads/2020/11/EkaoQQTXEAMA4BN.jpg)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Advent of Code 2022 (in Apex)
 
-## How Do You Plan to Deploy Your Changes?
+[Advent of Code](https://adventofcode.com/) is an annual holiday-themeed series of coding challlanges, starting on Dec 1, and ending on Dec 25. In 2022, I decided to take a stab at solving the challanges in Apex.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## My solutions
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Week 1
+  - [Challlange description](https://adventofcode.com/2022/day/1)
+  - [My code](https://github.com/dylanmorrill/adventOfCode2022__c/blob/master/force-app/main/default/classes/Advent2022_day1.cls)
+- Week 2
+  - [Challlange description](https://adventofcode.com/2022/day/2)
+  - [My code](https://github.com/dylanmorrill/adventOfCode2022__c/blob/master/force-app/main/default/classes/Advent2022_day2.cls)
