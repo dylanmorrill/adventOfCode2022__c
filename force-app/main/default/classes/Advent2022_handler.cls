@@ -2,12 +2,12 @@ public class Advent2022_handler {
   private Integer day;
   private Integer part;
 
-  public Advent2022_handler(Integer day, Integer part){
+  public Advent2022_handler(Integer day, Integer part) {
     this.day = day;
     this.part = part;
   }
 
-  public void execute(){
+  public void execute() {
     String debugString = debugStartPrint();
     Advent2022_dayGeneric currentDayClass = (Advent2022_dayGeneric)
       Type.forName('Advent2022_day' + day).newInstance();
@@ -22,10 +22,10 @@ public class Advent2022_handler {
     System.debug(LoggingLevel.ERROR, debugString);
   }
 
-  private String debugStartPrint(){
+  private String debugStartPrint() {
     String debugString = '\n';
-    for (Integer i=0; i<40; i+=2){
-      for (Integer j=0; j<i; j++){
+    for (Integer i=0; i<40; i+=2) {
+      for (Integer j=0; j<i; j++) {
         debugString += '*';
       }
         debugString += '\n';
@@ -39,10 +39,10 @@ public class Advent2022_handler {
   }
 
 
-  private String debugEndPrint(){
+  private String debugEndPrint() {
     String debugString = DEBUG_SPACER_LINE + '\n\n';
-    for (Integer i=40; i>0; i-=2){
-      for (Integer j=0; j<i; j++){
+    for (Integer i=40; i>0; i-=2) {
+      for (Integer j=0; j<i; j++) {
         debugString += '*';
       }
       debugString += '\n';

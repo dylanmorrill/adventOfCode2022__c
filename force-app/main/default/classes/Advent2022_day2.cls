@@ -4,16 +4,16 @@ public with sharing class Advent2022_day2 extends Advent2022_dayGeneric {
   private Map<String, String> CHAR_TO_OPPS_MOVE = new Map<String, String> {
     'A' => 'R',
     'B' => 'P',
-    'C' => 'S'};
+    'C' => 'S' };
   private Map<String, String> CHAR_TO_VALUE_MAP = new Map<String, String> {
     'X' => 'R',
     'Y' => 'P',
-    'Z' => 'S'};
+    'Z' => 'S' };
   private Map<String, InfoAboutRocksPapersAndScissors> CHAR_TO_SCORE_MAP =
     new Map<String, InfoAboutRocksPapersAndScissors> {
     'R' => new InfoAboutRocksPapersAndScissors('P', 'S', 1),
     'P' => new InfoAboutRocksPapersAndScissors('S', 'R', 2),
-    'S' => new InfoAboutRocksPapersAndScissors('R', 'P', 3)};
+    'S' => new InfoAboutRocksPapersAndScissors('R', 'P', 3) };
 
   public Advent2022_day2() {
     super('2');
