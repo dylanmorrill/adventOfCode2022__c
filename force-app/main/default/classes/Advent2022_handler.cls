@@ -9,8 +9,8 @@ public class Advent2022_handler {
 
   public void execute(){
     String debugString = debugStartPrint();
-    Advent2021_dayGeneric currentDayClass = (Advent2021_dayGeneric)
-      Type.forName('Advent2021_day' + day).newInstance();
+    Advent2022_dayGeneric currentDayClass = (Advent2022_dayGeneric)
+      Type.forName('Advent2022_day' + day).newInstance();
     switch on part{
       when 1 {
         debugString += currentDayClass.part1();
