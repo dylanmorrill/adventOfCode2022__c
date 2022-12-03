@@ -3,14 +3,15 @@ public with sharing class Advent2022_day1 extends Advent2022_dayGeneric {
     super('1');
   }
 
-  public override Integer part1() {
+  public override List<Integer> part1() {
     Integer howMuchDoesBigBoyElfHave;
     Integer currentSum = 0;
     for (String calorieCount : INPUT) {
       if (String.isblank(calorieCount)) {
-        if (howMuchDoesBigBoyElfHave == null ||
-          currentSum > howMuchDoesBigBoyElfHave) {
-
+        if (
+          howMuchDoesBigBoyElfHave == null ||
+          currentSum > howMuchDoesBigBoyElfHave
+        ) {
           howMuchDoesBigBoyElfHave = currentSum;
         }
         currentSum = 0;
@@ -18,10 +19,13 @@ public with sharing class Advent2022_day1 extends Advent2022_dayGeneric {
       }
       currentSum += Integer.valueOf(calorieCount);
     }
-    return howMuchDoesBigBoyElfHave;
+    return new List<Integer>{
+      howMuchDoesBigBoyElfHave,
+      Limits.getCpuTime() - cpuTimeStart
+    };
   }
 
-  public override Integer part2() {
+  public override List<Integer> part2() {
     Integer currentSum = 0;
     List<Integer> allTheElfsCalories = new List<Integer>();
     for (String calorieCount : INPUT) {
@@ -32,9 +36,12 @@ public with sharing class Advent2022_day1 extends Advent2022_dayGeneric {
       }
       currentSum += Integer.valueOf(calorieCount);
     }
-    Integer howManyElfs = allTheElfsCalories.size()-1;
+    Integer howManyElfs = allTheElfsCalories.size() - 1;
     allTheElfsCalories.sort();
-    return allTheElfsCalories[howManyElfs-2]
-      + allTheElfsCalories[howManyElfs-1] + allTheElfsCalories[howManyElfs];
+    Integer solveValue =
+      allTheElfsCalories[howManyElfs - 2] +
+      allTheElfsCalories[howManyElfs - 1] +
+      allTheElfsCalories[howManyElfs];
+    return new List<Integer>{ solveValue, Limits.getCpuTime() - cpuTimeStart };
   }
 }
