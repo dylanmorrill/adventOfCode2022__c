@@ -1,4 +1,4 @@
-public with sharing class Advent2022_day1 extends Advent2022_dayGeneric {
+public class Advent2022_day1 extends Advent2022_dayGeneric {
   public Advent2022_day1() {
     super('1');
   }
