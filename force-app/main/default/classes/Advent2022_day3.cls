@@ -23,9 +23,20 @@ public with sharing class Advent2022_day3 extends Advent2022_dayGeneric {
     return new List<Integer>{ sumScore, Limits.getCpuTime() - cpuTimeStart };
   }
 
+  public override List<Integer> part2() {
+    Integer sumScore = 0;
+    for (Integer i = 0; i < INPUT.size() - 2; i += 3) {
+      Set<Integer> firstElfsStuff = getCompartmentInts(INPUT[i]);
+      firstElfsStuff.retainAll(getCompartmentInts(INPUT[i + 1]));
+      firstElfsStuff.retainAll(getCompartmentInts(INPUT[i + 2]));
+      sumScore += new List<Integer>(firstElfsStuff)[0];
+    }
+    return new List<Integer>{ sumScore, Limits.getCpuTime() - cpuTimeStart };
+  }
+
   private Set<Integer> getCompartmentInts(String itemList) {
     Set<Integer> returnList = new Set<Integer>();
-    for (Integer i : itemList.getChars()) {
+    for (Integer i : itemList.trim().getChars()) {
       returnList.add(
         i <= UPPER_CASE_MAX
           ? i - UPPER_CASE_SUBTRACTOR
