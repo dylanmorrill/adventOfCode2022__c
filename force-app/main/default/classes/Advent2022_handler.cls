@@ -22,5 +22,9 @@ public class Advent2022_handler {
         solveValues = currentDayClass.part2();
       }
     }
+    System.debug(
+      LoggingLevel.ERROR,
+      String.format(DEBUG_STRING_TEMPLATE, solveValues)
+    );
   }
 }

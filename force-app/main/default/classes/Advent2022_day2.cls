@@ -1,4 +1,4 @@
-public class Advent2022_day2 extends Advent2022_dayGeneric {
+public with sharing class Advent2022_day2 extends Advent2022_dayGeneric {
   private Integer TIE_POINTS = 3;
   private Integer WIN_POINTS = 6;
   private Map<String, InfoAboutRocksPapersAndScissors> CHAR_TO_SCORE_MAP = new Map<String, InfoAboutRocksPapersAndScissors>{
