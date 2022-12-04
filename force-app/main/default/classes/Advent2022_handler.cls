@@ -1,11 +1,17 @@
 public class Advent2022_handler {
+  public static Boolean isFullRun;
   private Integer day;
   private Integer part;
   private final String DEBUG_STRING_TEMPLATE = 'Solve: {0} CPU: {1}';
 
   public Advent2022_handler(Integer day, Integer part) {
+    this(day, part, true);
+  }
+
+  public Advent2022_handler(Integer day, Integer part, Boolean isFullRun) {
     this.day = day;
     this.part = part;
+    Advent2022_handler.isFullRun = isFullRun;
   }
 
   public void execute() {

@@ -7,6 +7,9 @@ public virtual class Advent2022_dayGeneric {
   public Advent2022_dayGeneric(String WHAT_FUCKING_DAY_IS_IT) {
     this.WHAT_FUCKING_DAY_IS_IT = WHAT_FUCKING_DAY_IS_IT;
     String fileName = 'advent22Day' + WHAT_FUCKING_DAY_IS_IT;
+    if (!Advent2022_handler.isFullRun) {
+      fileName += 'TEST';
+    }
     INPUT = [
         SELECT Body
         FROM StaticResource
