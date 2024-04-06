@@ -1,4 +1,4 @@
-![Christmas banner](https://blogs.sap.com/wp-content/uploads/2020/11/EkaoQQTXEAMA4BN.jpg)
+![Christmas banner](https://community.alteryx.com/t5/image/serverpage/image-id/269381iE1288FAEB30E4EDA?v=v2)
 
 # Advent of Code 2022 (in Apex)
 
