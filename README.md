@@ -14,3 +14,9 @@
 - Week 2
   - [Challlange description](https://adventofcode.com/2022/day/2)
   - [My code](https://github.com/dylanmorrill/adventOfCode2022__c/blob/master/force-app/main/default/classes/Advent2022_day2.cls)
+- Week 3
+  - [Challlange description](https://adventofcode.com/2022/day3)
+  - [My code](https://github.com/dylanmorrill/adventOfCode2022__c/blob/master/force-app/main/default/classes/Advent2022_day2.cls)
+- Week 4
+  - [Challlange description](https://adventofcode.com/2022/day/4)
+  - [My code](https://github.com/dylanmorrill/adventOfCode2022__c/blob/master/force-app/main/default/classes/Advent2022_day2.cls)
